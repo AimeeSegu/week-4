@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>Week 4 demo</h1>
@@ -16,17 +17,35 @@
         <section>
             <h2>Forms</h2>
             <article>
+                <form action="next.html" method="get"> <!--Get is an insecure method. (the other is "post") Genuinely why's the guy next to me typing a whole line of comment.-->
+                    <label for="fname">Name</label>
+                    <input id="fname" type="text" name="firstname" placeholder="first name"> <!-- also type="color" type="password"-->
 
+                    <div> <!--bucket-->
+                        <label for="msg">Message</label> <br>
+                        <textarea name="message" id="msg"></textarea><!--textarea-->
+                    </div>
+
+                    <div>
+                        <label for="pgm">Program</label>
+                        <select name="message" id="msg">
+                            <option value="imd">Interactive Media Design</option>
+                            <option value="gj">Graphic Design</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="placeholder">Placeholder</label>
+                    </div>
+
+                    <div>
+                        <button type="submit">Send it</button>
+                    </div>
+                </form>
             </article>
         </section>
         
         <hr>
-        <section>
-            <article>
-                <h3>Internal link</h3>
-                <p><a style="color:green;" href="next.html">Other Page</a></p>
-            </article>
-        </section>
 
         <section>
             <h2>Links</h2>
@@ -36,12 +55,19 @@
                 <p><a style="color:red;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Get a free cookie</a></p> <!--rickroll-->
             </article> <!--article>h3*1 (oh my god i did it)--> 
 
+            <article>
+                <h3>Internal link</h3>
+                <p><a style="color:green;" href="next.html">Other Page</a></p>
+            </article>
+
             <article> <!--article>h3+p what the hell am I doing bro-->
                 <h3>On page link</h3>
                 <p><a href="#bottom">To the bottom &darr;</a></p>
             </article>
+        </section>
         
         <hr>
+        
         <section>
         <h2>Table</h2>
         <article>
